@@ -44,4 +44,11 @@ const asideIcons = [
   },
 ];
 
-export { asideIcons };
+const requestOptions = {
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`,
+    "Content-Type": "application/json",
+  },
+};
+
+export { asideIcons, requestOptions };

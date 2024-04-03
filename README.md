@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReachInBox
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+What things you need to install the software and how to install them:
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js
+- npm
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installing
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+A step by step series of examples that tell you how to get a development environment running:
+
+1. **Clone the repository** - You can clone the repository using the clone command or download the zip and run it locally.
+
+2. **Install dependencies** - Install all the dependencies for the project. The main dependencies used in this project are:
+
+   - React.js
+   - Shadcn UI for UI
+   - TailwindCSS for styling
+   - React Router DOM
+
+   Run the following command to install all dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the project** - After installing all dependencies, you can run the project locally on your system using the following command:
+
+   ```bash
+   npm run dev
+   ```
+
+## Note
+
+If after you successfully logged in and there is no data showed then what you can do is create a `.env` file in the root directory and create a variable with `VITE_ACCESS_TOKEN` and add the token over there.
+
+Your token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2hhaGFuZXByaXlhbmthczAxQGdtYWlsLmNvbSIsImlkIjo5LCJmaXJzdE5hbWUiOiJQcml5YW5rYSIsImxhc3ROYW1lIjoiU2hhaGFuZSJ9LCJpYXQiOjE3MTEzODYwMzUsImV4cCI6MTc0MjkyMjAzNX0.aawIHorCsYmq5bCQViAo7oEmEvwBHl_LhBq-Hh3sYGc`
+
+Please note that due to some issues in the backend, some tokens work and some tokens won't.
+
+## Authors
+
+- Pratik Bhagwat
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details

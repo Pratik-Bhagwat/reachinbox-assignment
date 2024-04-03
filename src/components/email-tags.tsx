@@ -19,7 +19,7 @@ const EmailTags = ({ isCampaignTag, content }: EmailTagsProps) => {
       {isCampaignTag ? (
         <img className="size-3" src={send} alt="send-img" />
       ) : (
-        <div className="size-2 rounded-full bg-[#46C18D] ring-2 ring-green-800 dark:bg-[#57E0A6]" />
+        <div className="size-2 rounded-full bg-[#46C18D] ring-2 ring-green-300 dark:bg-[#57E0A6] dark:ring-green-800" />
       )}
       <p
         className={cn(

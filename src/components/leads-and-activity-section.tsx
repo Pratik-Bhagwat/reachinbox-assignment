@@ -9,7 +9,7 @@ const LeadsAndActivitySection = () => {
         {/* lead details */}
         <div>
           <div className="h-full rounded-md bg-[#ECEFF3] px-2 py-2 dark:bg-[#353533]">
-            <h4 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+            <h4 className="font-semibold text-[#454F5B] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
               Lead Details
             </h4>
           </div>
@@ -24,12 +24,12 @@ const LeadsAndActivitySection = () => {
         {/* activities */}
         <div>
           <div className="h-full rounded-md bg-[#ECEFF3] px-2 py-2 dark:bg-[#353533]">
-            <h4 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+            <h4 className="font-semibold text-[#454F5B] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
               Activites
             </h4>
           </div>
           <div className="flex flex-col space-y-3 p-2">
-            <h5 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+            <h5 className="font-semibold text-[#172B4D] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
               Campaign Name
             </h5>
             <div className="flex flex-col justify-center space-y-3">
@@ -41,22 +41,22 @@ const LeadsAndActivitySection = () => {
                 {/* steps icons */}
                 <div className="relative flex items-center self-start">
                   <div className="flex flex-col justify-center space-y-8 self-start ">
-                    <div className="z-10 flex size-7 items-center justify-center rounded-full border dark:border-[#41464B] dark:bg-[#23272C]">
+                    <div className="z-10 flex size-7 items-center justify-center rounded-full border border-[#DFE3E8] bg-[#EEF1F4] dark:border-[#41464B] dark:bg-[#23272C]">
                       <img src={emaildark} className="size-5" alt="email png" />
                     </div>
-                    <div className="z-10 flex size-7 items-center justify-center rounded-full border dark:border-[#41464B] dark:bg-[#23272C]">
+                    <div className="z-10 flex size-7  items-center justify-center rounded-full border border-[#DFE3E8] bg-[#EEF1F4] dark:border-[#41464B] dark:bg-[#23272C]">
                       <img src={emaildark} className="size-5" alt="email png" />
                     </div>
-                    <div className="z-10 flex size-7 items-center justify-center rounded-full border dark:border-[#41464B] dark:bg-[#23272C]">
+                    <div className="z-10 flex size-7 items-center justify-center rounded-full border border-[#DFE3E8] bg-[#EEF1F4] dark:border-[#41464B] dark:bg-[#23272C]">
                       <img src={emaildark} className="size-5" alt="email png" />
                     </div>
                     <div className="absolute bottom-1 left-3 h-[80%] self-start border dark:border-[#403F3F]" />
                   </div>
                 </div>
                 {/* email steps */}
-                <div className="flex flex-col justify-center space-y-5">
+                <div className="flex flex-col justify-center space-y-3">
                   <div className="flex flex-col justify-center space-y-2">
-                    <h5 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+                    <h5 className="font-semibold text-[#172B4D] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
                       Step 1: Email
                     </h5>
                     <div className="flex items-center space-x-2">
@@ -67,7 +67,7 @@ const LeadsAndActivitySection = () => {
                     </div>
                   </div>
                   <div className="flex flex-col justify-center space-y-2">
-                    <h5 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+                    <h5 className="font-semibold text-[#172B4D] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
                       Step 2: Email
                     </h5>
                     <div className="flex items-center space-x-2">
@@ -78,7 +78,7 @@ const LeadsAndActivitySection = () => {
                     </div>
                   </div>
                   <div className="flex flex-col justify-center space-y-2">
-                    <h5 className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+                    <h5 className="font-semibold text-[#172B4D] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
                       Step 3: Email
                     </h5>
                     <div className="flex items-center space-x-2">

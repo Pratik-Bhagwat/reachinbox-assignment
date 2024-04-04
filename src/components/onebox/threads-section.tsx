@@ -48,7 +48,7 @@ const ThreadsSection = ({
       >
         <div className="flex flex-col items-center justify-center space-y-4">
           <img src={noemail} alt="no email svg" />
-          <p className="font-semibold dark:text-white md:text-lg lg:text-xl">
+          <p className="text-center font-semibold dark:text-white md:text-lg lg:text-xl">
             It&apos;s the beginning of a legendary conversation
           </p>
         </div>

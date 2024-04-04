@@ -14,7 +14,6 @@ const LatestEmailReply = ({ email }: LatestEmailReplyProps) => {
   return (
     <div
       onClick={() => {
-        console.log(email);
         setThreadId(email.threadId);
       }}
       className="w-full cursor-pointer px-2 py-3 dark:border-t dark:border-[#33383F]"
@@ -23,10 +22,10 @@ const LatestEmailReply = ({ email }: LatestEmailReplyProps) => {
         {/* email id and date */}
         <div className="space-y-1">
           <div className="flex items-center justify-between">
-            <p className="font-medium text-[#343A40] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+            <p className="font-medium text-[#343A40] dark:text-[#FFFFFF] md:text-[10px] xl:text-sm">
               {fromEmail}
             </p>
-            <span className="text-[#919EAB] dark:text-[#FCFCFC66] md:text-[10px] lg:text-xs">
+            <span className="whitespace-nowrap text-[#919EAB] dark:text-[#FCFCFC66] md:text-[10px] lg:text-xs xl:text-[13px]">
               {convertTimestampToDate(sentAt)}
             </span>
           </div>

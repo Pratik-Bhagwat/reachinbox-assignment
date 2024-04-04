@@ -15,9 +15,9 @@ const Onebox = () => {
   const emails = useGetEmails();
 
   useEffect(() => {
-    if (threadId !== 0) {
+    if (threadId !== 0 && !isReplyClicked && !isDeleteClicked) {
       const handleKeyPress = (e: KeyboardEvent) => {
-        const key = e.key.toUpperCase();
+        const key = e.key;
         if (key === "D") {
           setIsDeleteClicked(true);
         }
@@ -31,7 +31,7 @@ const Onebox = () => {
         window.removeEventListener("keypress", handleKeyPress);
       };
     }
-  }, [threadId]);
+  }, [threadId, isDeleteClicked, isReplyClicked]);
 
   return (
     <>

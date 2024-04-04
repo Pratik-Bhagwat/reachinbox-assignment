@@ -18,7 +18,7 @@ const DeleteModel = ({ threadId, setIsDeleteClicked }: DeleteModelProps) => {
     event.stopPropagation();
   };
 
-  const { setRefresh } = useSelectedThread();
+  const { setRefresh, setThreadId } = useSelectedThread();
 
   const handleDelete = async () => {
     if (threadId && threadId !== 0) {
@@ -31,6 +31,7 @@ const DeleteModel = ({ threadId, setIsDeleteClicked }: DeleteModelProps) => {
         console.log(data);
         setIsDeleteClicked(false);
         setRefresh((refresh) => !refresh);
+        setThreadId(0);
         toast.success("thread deleted successfully");
       } catch (error) {
         toast.error("something went wrong");

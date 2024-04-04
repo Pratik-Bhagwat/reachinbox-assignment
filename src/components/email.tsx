@@ -21,22 +21,22 @@ const Email = ({ thread }: EmailProps) => {
                 {subject}
               </h4>
               {/* date and time */}
-              <p className="dark:text-[#7F7F7F] md:text-xs lg:text-sm">
+              <p className="text-[#637381] dark:text-[#7F7F7F] md:text-xs lg:text-sm">
                 {formatDate(sentAt)}
               </p>
             </div>
             {/* from email*/}
-            <p className="dark:text-[#AEAEAE] md:text-xs lg:text-sm">
+            <p className="text-[#637381] dark:text-[#AEAEAE] md:text-xs lg:text-sm">
               from : {fromEmail}
             </p>
             {/* to email*/}
-            <p className="dark:text-[#AEAEAE] md:text-xs lg:text-sm">
+            <p className="text-[#637381] dark:text-[#AEAEAE] md:text-xs lg:text-sm">
               to : {toEmail}
             </p>
           </div>
           {/* email message */}
           <div className="h-3/5 px-2 py-1">
-            <p className="dark:text-[#E1E0E0] md:text-xs lg:text-sm">
+            <p className="text-[#172B4D] dark:text-[#E1E0E0] md:text-xs lg:text-sm">
               {convertHTMLToText(body)}
             </p>
           </div>

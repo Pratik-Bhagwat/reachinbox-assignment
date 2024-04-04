@@ -29,7 +29,7 @@ const InboxHeader = ({
         requestOptions,
       );
       const data = response.data;
-      setRefresh(true);
+      setRefresh((refresh) => !refresh);
       toast.success("refreshed successfully");
     } catch (error) {
       toast.error("something went wrong");

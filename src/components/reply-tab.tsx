@@ -114,7 +114,7 @@ const ReplyTab = ({ threadId, setIsReplyClicked }: ReplyTabProps) => {
           <Textarea
             value={message}
             onChange={handleTextareaChange}
-            className="border-none bg-inherit ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="max-h-full border-none bg-inherit ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             placeholder="Type your email here."
           />
         </div>

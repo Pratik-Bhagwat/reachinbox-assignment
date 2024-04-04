@@ -15,11 +15,16 @@ import { convertTimestampToDate } from "@/lib/utils";
 import Loader from "../shared/loader";
 
 interface ThreadsSectionProps {
+  isReplyClicked: boolean;
+  setIsReplyClicked: React.Dispatch<React.SetStateAction<boolean>>;
   setIsDeleteClicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ThreadsSection = ({ setIsDeleteClicked }: ThreadsSectionProps) => {
-  const [isReplyClicked, setIsReplyClicked] = useState(false);
+const ThreadsSection = ({
+  setIsDeleteClicked,
+  isReplyClicked,
+  setIsReplyClicked,
+}: ThreadsSectionProps) => {
   const [isViewMoreClicked, setIsViewMoreClicked] = useState(false);
 
   const { theme } = useTheme();

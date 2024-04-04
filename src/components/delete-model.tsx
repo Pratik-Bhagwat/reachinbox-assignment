@@ -30,7 +30,7 @@ const DeleteModel = ({ threadId, setIsDeleteClicked }: DeleteModelProps) => {
         const data = response.data;
         console.log(data);
         setIsDeleteClicked(false);
-        setRefresh(true);
+        setRefresh((refresh) => !refresh);
         toast.success("thread deleted successfully");
       } catch (error) {
         toast.error("something went wrong");

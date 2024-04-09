@@ -22,16 +22,16 @@ const LatestEmailReply = ({ email }: LatestEmailReplyProps) => {
         {/* email id and date */}
         <div className="space-y-1">
           <div className="flex items-center justify-between">
-            <p className="font-medium text-[#343A40] dark:text-[#FFFFFF] md:text-[10px] xl:text-sm">
+            <p className="font-inter font-medium text-[#343A40] dark:text-[#FFFFFF] md:text-[12px] xl:text-sm">
               {fromEmail}
             </p>
-            <span className="whitespace-nowrap text-[#919EAB] dark:text-[#FCFCFC66] md:text-[10px] lg:text-xs xl:text-[13px]">
+            <span className="whitespace-nowrap font-inter text-[#919EAB] dark:text-[#FCFCFC66] md:text-[10px] xl:text-xs">
               {convertTimestampToDate(sentAt)}
             </span>
           </div>
           {/* email reply message */}
           <div>
-            <p className="text-[#172B4D] dark:text-[#E1E0E0] md:text-[10px] lg:text-xs">
+            <p className="text-balance font-inter text-[#172B4D] dark:text-[#E1E0E0] md:text-[10px] xl:text-xs">
               {convertHTMLToText(body)}
             </p>
           </div>

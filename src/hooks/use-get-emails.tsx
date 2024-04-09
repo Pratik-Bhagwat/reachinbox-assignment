@@ -16,6 +16,7 @@ const useGetEmails = () => {
           requestOptions,
         );
         const data = response.data.data;
+        console.log(data);
         setEmails(data);
       } catch (error) {
         console.log("error while fetching data", error);

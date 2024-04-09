@@ -18,7 +18,7 @@ const Line = ({ text, onClick, isViewMore = false }: LineProps) => {
       <div
         onClick={onClick}
         className={cn(
-          "flex h-6 items-center justify-center space-x-2 rounded-sm bg-[#EEF1F4] p-1 px-2 font-semibold dark:bg-[#171819] dark:text-[#FFFFFF] md:text-[10px] lg:text-xs",
+          "flex h-6 items-center justify-center space-x-2 rounded-sm bg-[#EEF1F4] p-1 px-2 font-semibold dark:bg-[#171819] dark:text-[#FFFFFF]",
           isViewMore && "cursor-pointer",
         )}
       >
@@ -28,7 +28,9 @@ const Line = ({ text, onClick, isViewMore = false }: LineProps) => {
             alt="expand icon"
           />
         )}
-        <span> {text}</span>
+        <span className="font-openSans font-semibold md:text-[10px]">
+          {text}
+        </span>
       </div>
     </div>
   );

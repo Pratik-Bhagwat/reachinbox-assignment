@@ -43,23 +43,21 @@ const InboxHeader = ({
       <div className="flex w-full items-center justify-between p-3">
         <div className="flex flex-col justify-center space-y-2">
           <div className="flex items-center space-x-1 pt-2">
-            <h4 className="font-bold text-[#4285F4] md:text-lg lg:text-xl">
+            <h4 className="font-openSans font-bold text-[#4285F4] md:text-lg lg:text-xl">
               All Inbox(s)
             </h4>
             <img src={down} alt="down-arrow" className="font-medium" />
           </div>
           <div>
-            <p className="text-[#7F7F7F] md:text-xs lg:text-sm">
-              <span className="font-bold text-[#343A40] dark:text-white">
-                1/1{" "}
-              </span>
+            <p className="font-openSans font-bold text-[#7F7F7F] md:text-xs lg:text-sm">
+              <span className="text-[#343A40] dark:text-white">1/1 </span>
               Inboxes selected
             </p>
           </div>
         </div>
         <div
           onClick={handleReset}
-          className="flex size-8 items-center justify-center self-start rounded-sm border border-[#DFE3E8] dark:border-none"
+          className="flex size-8 cursor-pointer items-center justify-center self-start rounded-sm border border-[#DFE3E8] dark:border-none"
         >
           <img src={theme === "dark" ? reset : resetLight} alt="reset png" />
         </div>
@@ -71,7 +69,7 @@ const InboxHeader = ({
             <Search className="size-5 text-[#ADBAC7] dark:text-[#FFFFFF33]" />
             <Input
               type="search"
-              className="ouline-none h-full border-none bg-transparent placeholder:text-[#ADBAC7] focus-visible:ring-0 focus-visible:ring-offset-0 dark:placeholder:text-[#FFFFFF33]"
+              className="ouline-none h-full border-none bg-transparent placeholder:font-inter placeholder:text-[#ADBAC7] focus-visible:ring-0 focus-visible:ring-offset-0 dark:placeholder:text-[#FFFFFF33]"
               placeholder="Search"
             />
           </div>
@@ -81,16 +79,16 @@ const InboxHeader = ({
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <div className="flex size-5 items-center justify-center rounded-full bg-[#ECECEC] p-3 dark:bg-[#222426]">
-                  <span className="font-semibold text-[#5C7CFA] md:text-xs lg:text-sm">
+                  <span className="font-inter font-semibold text-[#5C7CFA] md:text-xs lg:text-sm">
                     {repliesLength}
                   </span>
                 </div>
-                <p className="font-semibold text-[#172B4D] dark:text-[#E6E6E6] md:text-xs lg:text-sm">
+                <p className="font-inter font-semibold text-[#172B4D] dark:text-[#E6E6E6] md:text-xs lg:text-sm">
                   New Replies
                 </p>
               </div>
               <div className="flex items-center space-x-3">
-                <p className="dark: font-semibold text-[#172B4D] dark:text-[#E6E6E6] md:text-xs lg:text-sm">
+                <p className="font-inter font-semibold text-[#172B4D] dark:text-[#E6E6E6] md:text-xs lg:text-sm">
                   Newest
                 </p>
                 <img

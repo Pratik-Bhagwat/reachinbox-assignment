@@ -48,7 +48,7 @@ const ThreadsSection = ({
       >
         <div className="flex flex-col items-center justify-center space-y-4">
           <img src={noemail} alt="no email svg" />
-          <p className="text-center font-semibold dark:text-white md:text-lg lg:text-xl">
+          <p className="text-center font-openSans font-semibold dark:text-white md:text-lg lg:text-xl">
             It&apos;s the beginning of a legendary conversation
           </p>
         </div>
@@ -61,10 +61,10 @@ const ThreadsSection = ({
       <div className="flex h-16 items-center justify-between border-b px-4 py-2">
         <div className="p-1">
           <div className="flex flex-col justify-center space-y-1">
-            <h4 className="text-[#343A40] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+            <h4 className="font-inter font-semibold text-[#343A40] dark:text-[#FFFFFF] md:text-xs lg:text-sm">
               {threads[0]?.fromName}
             </h4>
-            <p className=" text-[#343A40B2] dark:text-[#FFFFFF66] md:text-[10px] lg:text-xs">
+            <p className=" font-inter text-[#343A40B2] dark:text-[#FFFFFF66] md:text-[10px] lg:text-xs">
               {threads[0]?.fromEmail}
             </p>
           </div>
@@ -74,8 +74,8 @@ const ThreadsSection = ({
           <div>
             <Button className="flex items-center rounded-sm border border-[#DFE3E8] bg-[#FFFFFF] hover:bg-muted dark:border-[#343A40] dark:bg-[#1F1F1F] md:w-[100px] md:justify-normal md:space-x-2 md:px-2 lg:w-[180px] lg:justify-center lg:space-x-4">
               <div className="flex items-center md:space-x-2 lg:space-x-4">
-                <div className="rounded-full bg-[#46C18D] ring-2 ring-green-300 dark:bg-[#57E0A6] dark:ring-green-800 md:size-2 lg:size-4" />
-                <p className="font-semibold text-[#172B4D] dark:text-[#D3D7DB] md:text-[10px] lg:text-base">
+                <div className="rounded-full bg-[#46C18D] ring-2 ring-green-300 dark:bg-[#57E0A6] dark:ring-green-800 md:size-2 lg:size-3" />
+                <p className="font-openSans font-semibold text-[#172B4D] dark:text-[#D3D7DB] md:text-[10px] lg:text-xs">
                   Interested
                 </p>
               </div>
@@ -104,13 +104,13 @@ const ThreadsSection = ({
           <Line text={convertTimestampToDate(threads[0].sentAt)} />
           <EmailThread thread={threads[0]} />
         </>
-        {!isViewMoreClicked && (
+        {!isViewMoreClicked && threads.length > 1 ? (
           <Line
             text={`view ${threads.length - 1} more`}
             isViewMore={true}
             onClick={() => setIsViewMoreClicked(true)}
           />
-        )}
+        ) : null}
         {isViewMoreClicked &&
           threads
             .filter((_, idx) => idx !== 0)
@@ -132,7 +132,7 @@ const ThreadsSection = ({
           className="space-x-3 bg-gradient-to-r from-[#4B63DD] to-[#0524BFFC]"
         >
           <img src={reply} alt="reply png" className="size-4" />
-          <span className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+          <span className="font-openSans font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
             Reply
           </span>
         </Button>

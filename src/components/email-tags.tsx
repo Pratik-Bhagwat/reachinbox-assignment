@@ -23,7 +23,7 @@ const EmailTags = ({ isCampaignTag, content }: EmailTagsProps) => {
       )}
       <p
         className={cn(
-          "font-semibold md:text-[6.8px] lg:text-[10px]",
+          "font-openSans font-semibold md:text-[6.8px] lg:text-[10px]",
           isCampaignTag
             ? "text-[#637381] dark:text-white"
             : "text-[#46C18D] dark:text-[#57E0A6]",

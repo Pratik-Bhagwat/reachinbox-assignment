@@ -87,7 +87,7 @@ const ReplyTab = ({ threadId, setIsReplyClicked }: ReplyTabProps) => {
   return (
     <div className="absolute top-16 w-[95%] rounded-lg border bg-white shadow-md dark:border-[#4A5055] dark:bg-[#141517] md:left-3 lg:left-[1.4rem]">
       <div className="flex h-10 items-center justify-between rounded-tl-lg rounded-tr-lg bg-muted dark:bg-[#23272C]">
-        <h5 className="ml-4 dark:text-[#BAB9BD] md:text-[10px] lg:text-xs">
+        <h5 className="ml-4 font-openSans font-bold dark:text-[#BAB9BD] md:text-[10px] lg:text-xs">
           Reply
         </h5>
         <Button
@@ -114,7 +114,7 @@ const ReplyTab = ({ threadId, setIsReplyClicked }: ReplyTabProps) => {
           <Textarea
             value={message}
             onChange={handleTextareaChange}
-            className="max-h-full border-none bg-inherit ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="max-h-full border-none bg-inherit font-openSans ring-0 placeholder:font-openSans focus-visible:ring-0 focus-visible:ring-offset-0 lg:text-sm placeholder:lg:text-sm"
             placeholder="Type your email here."
           />
         </div>
@@ -126,7 +126,7 @@ const ReplyTab = ({ threadId, setIsReplyClicked }: ReplyTabProps) => {
           size={"sm"}
           className="h-full space-x-3 bg-gradient-to-r from-[#4B63DD] to-[#0524BFFC]"
         >
-          <span className="font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+          <span className="font-openSans font-semibold dark:text-[#FFFFFF] md:text-xs lg:text-sm">
             Send
           </span>
           <img src={senddown} alt="down-arrow png" />
@@ -136,7 +136,7 @@ const ReplyTab = ({ threadId, setIsReplyClicked }: ReplyTabProps) => {
           className="h-full space-x-3 border-none bg-muted hover:bg-muted dark:bg-transparent"
         >
           <img src={flashon} alt="down-arrow png" className="size-5" />
-          <span className="font-semibold text-muted-foreground dark:text-[#FFFFFF] md:text-xs lg:text-sm">
+          <span className="font-openSans font-semibold text-muted-foreground dark:text-[#FFFFFF] md:text-xs lg:text-sm">
             Variables
           </span>
         </Button>
